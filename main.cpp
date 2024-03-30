@@ -5,6 +5,8 @@
 
 using namespace std;
 
+// Main function 
+// Test class 
 int main()
 {
 
@@ -19,6 +21,7 @@ int main()
 	daytwo.printTo();
 
 
+	// Add 3 days to current day 
 	day.printTo();
 	int add1 = 3;
 	string out1;
@@ -28,11 +31,13 @@ int main()
 	int add2 = 30;
 	string out2;
 
+	// Add 30 days to current day 
 	out2 = day.addToDay(inputDay, add2);
 	cout << "After adding 30 days:" << out2 << endl;
 	int add3 = 365;
 	string out3;
 
+	// Add 365 days to current day 
 	out3 = day.addToDay(inputDay, add3);
 	cout << "After adding 365 days:" << out3 << endl;
 

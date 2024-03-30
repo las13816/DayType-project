@@ -25,6 +25,7 @@ dayType::~dayType()
 {
 };
 
+// Assign days 
 dayType::dayType(string inputDay)
 {
     days[0] = "Sunday";
@@ -38,15 +39,18 @@ dayType::dayType(string inputDay)
     today = inputDay;
 
 
+    // Assign tomorrow and yesterday
     tomorrow = dayType::setReturnNext(today);
     previousDay = dayType::setReturnPrevious(today);
 
 
 
+    // Print statement 
     cout << "From constructor with parameter ";
 
 };
 
+// Assign values to tomorrow 
 string dayType::setReturnNext(string inputDay)
 {
     if (today == days[0])
@@ -81,6 +85,7 @@ string dayType::setReturnNext(string inputDay)
 
 };
 
+// Assign values to previous day or yesterday
 string dayType::setReturnPrevious(string inputDay)
 {
     if (today == days[0])
@@ -115,22 +120,26 @@ string dayType::setReturnPrevious(string inputDay)
 
 };
 
+// Print 
 void dayType::printDay(string today)
 {
     cout << "Today is: " << today << endl;
 };
 
+// Set the day and return 
 string dayType::setDay(string inputDay)
 {
     today = inputDay;
     return 0;
 };
 
+// Return value for current day 
 string dayType::returnDay()
 {
     return today;
 };
 
+// Loop for addign days to current day 
 string dayType::addToDay(string today, int addto)
 {
 
@@ -174,6 +183,7 @@ string dayType::addToDay(string today, int addto)
 
 
 
+// Print statements 
 void dayType::printTo()
 {
     cout << "Today is: " << today << endl;
