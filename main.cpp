@@ -10,7 +10,7 @@ int main() {
 
     // Constructor with specified date
     std::cout << "Constructor: ";
-    dateType specificDate(4, 10, 2024);
+    dateType specificDate(4, 15, 2024);
     specificDate.print();
     std::cout << std::endl;
 
@@ -25,7 +25,7 @@ int main() {
     specificDate.print();
     std::cout << std::endl;
 
-    //Resetting dates
+    //Resetting year, month, and day 
     std::cout << "Resetting year to 2000: ";
     specificDate.setYear(2000);
     specificDate.print();
@@ -47,3 +47,4 @@ int main() {
 
     return 0;
 }
+

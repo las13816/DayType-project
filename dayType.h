@@ -19,7 +19,7 @@ public:
     dayType(string d);
 
 private:
-    string day; // Only one instance variable needed ( got rid of other instance variables ) 
+    string day; 
 };
 
 #endif
