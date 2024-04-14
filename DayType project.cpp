@@ -6,10 +6,11 @@
 
 using namespace std;
 
+// Static array
 string dayType::weekDays[7] = { "Sunday", "Monday", "Tuesday",
                                "Wednesday", "Thursday", "Friday",
                                "Saturday" };
-
+// Changed to a void 
 void dayType::print() const {
     cout << day;
 }
