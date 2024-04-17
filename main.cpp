@@ -19,7 +19,7 @@ int main() {
     std::cout << "Number of days left: " << specificDate.numberOfDaysLeft() << std::endl;
     std::cout << "Number of days in month: " << specificDate.getDaysInMonth() << std::endl;
 
-    // Incrementing date
+    // Increment the date 
     specificDate.incrementDate(15);
     std::cout << "After 15 days, the date will be: ";
     specificDate.print();
@@ -41,12 +41,12 @@ int main() {
     specificDate.print();
     std::cout << std::endl;
 
-    // Date is now set to:
+    // Print what the date is now set to 
     std::cout << "Date is now set to: ";
     specificDate.print();
     std::cout << std::endl;
 
-    // Additional calls to extDateType methods
+    // Additional calls (are not included in dateType) 
     std::cout << "Long date: ";
     specificDate.printLongDate();
     std::cout << std::endl;
